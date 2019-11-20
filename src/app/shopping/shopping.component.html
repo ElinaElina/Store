@@ -1,0 +1,10 @@
+
+    <div *ngIf="shoppingService.messages.length">
+
+        <h2>Add</h2>
+        <button class="clear"
+                (click)="shoppingService.clear()">clear</button>
+        <div *ngFor='let shopping of shoppingService.messages'> {{message}} </div>
+      
+      </div>
+    
